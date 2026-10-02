@@ -1,0 +1,6 @@
+interface:
+  display_name: "yinbao · 银豹美业后台操作"
+  short_description: "复用已核实路径查询银豹数据、导出报表并执行门店内业务操作"
+  default_prompt: "使用 $yinbao 完成银豹后台任务，核对门店和数据口径并回读操作结果。"
+policy:
+  allow_implicit_invocation: true
