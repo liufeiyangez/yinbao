@@ -30,6 +30,16 @@ npx --yes skills add liufeiyangez/yinbao --skill yinbao --agent cursor --global 
 
 去掉 `--global` 即安装到当前项目。`--copy` 避免依赖符号链接。安装后重新打开或刷新目标 agent 的技能发现；Codex 调用 `$yinbao`，Claude Code 调用 `/yinbao`，也可以直接要求“使用 yinbao skill 查询银豹数据”。
 
+2026-10-02 已用安装器在隔离项目实测：识别到一个名为 yinbao 的 skill，复制安装到 `.agents/skills/yinbao`，安装后路径查询脚本可运行。直接远程克隆曾遇到本机 GitHub 网络失败；不将本地安装通过宣称为所有平台远程安装通过。
+
+如果网络无法克隆，登录 GitHub 后在仓库页面选择 Code → Download ZIP，解压，再从该文件夹的父目录执行（路径改成实际解压目录）：
+
+```sh
+npx --yes skills add ./yinbao-main --skill yinbao --agent codex --global --copy --yes
+```
+
+Claude Code 改为 `--agent claude-code`，Cursor 改为 `--agent cursor`。本地目录安装不需要再次访问这个私有 GitHub 仓库；首次运行安装器仍可能需要 npm 下载。
+
 更新：
 
 ```sh
