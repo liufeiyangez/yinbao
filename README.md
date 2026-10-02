@@ -6,11 +6,7 @@
 
 ## 安装到其他 agent
 
-仓库为私有。目标电脑安装 Git、Node.js/npm 和 GitHub CLI，先登录有本仓库访问权限的账号：
-
-```sh
-gh auth login
-```
+仓库已公开。目标电脑安装 Git 和 Node.js/npm 即可，无需登录 GitHub，直接执行下方安装命令。
 
 使用支持多种 agent 的 [Vercel Skills CLI](https://github.com/vercel-labs/skills)：
 
@@ -49,7 +45,7 @@ npx --yes skills update yinbao
 ### 不使用安装器
 
 ```sh
-gh repo clone liufeiyangez/yinbao
+git clone https://github.com/liufeiyangez/yinbao.git
 ```
 
 将仓库中的整个 `skills/yinbao` 文件夹复制到目标平台的技能目录，保留全部相对结构。
