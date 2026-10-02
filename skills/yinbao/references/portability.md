@@ -8,4 +8,4 @@
 
 版本：2026-10-02 工作版。它是已观察功能和已验证 SOP 的可用集合，尚非每个按钮/选项均实测完成的最终全覆盖版。复用脚本不会自动测试保存、删除、付款、通知、跨店复制等动作。
 
-GitHub 私有仓库：`liufeiyangez/yinbao`，skill 路径 `skills/yinbao`。其他电脑先 `gh auth login` 登录有仓库权限的账号，再使用仓库 README 中的安装命令。安装 skill 不会带走银豹登录状态；新环境仍需用户授权登录。
+GitHub 公开仓库：`liufeiyangez/yinbao`，skill 路径 `skills/yinbao`。其他电脑直接使用仓库 README 中的安装命令，无需 GitHub 登录。安装 skill 不会带走银豹登录状态；新环境仍需用户授权登录。
